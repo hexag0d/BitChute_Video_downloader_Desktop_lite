@@ -1,0 +1,14 @@
+<h3>Type a BitChute link into the textbox then right click > save link as</h3>
+<br />
+<input id="DownloadSource" type="text" style="width:50%"/>
+<a id="DownloadLink" href="https:www.bitchute.com">Download</a>
+<br />
+<br />
+<a href="https://www.bitchute.com/help-us-grow/">BitChute is working round the clock to provide free speech content.  It's not free to develop new software and maintain the hardware so please consider a donation if you find downloads to be helpful.  Thanks -BitChute</a>
+
+<script>
+
+    document.getElementById('DownloadSource').addEventListener('change', () => {
+        document.getElementById('DownloadLink').setAttribute('href', document.getElementById('DownloadSource').value);
+    })
+</script>
